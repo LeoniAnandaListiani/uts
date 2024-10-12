@@ -3,40 +3,42 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #2c2c2c; 
+    color: white; 
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #1a1a1a; 
     color: white;
 }
 
 .profile-photo {
     width: 150px;
-    height: 150px; /* Pastikan tinggi dan lebar sama agar kotak */
-    object-fit: cover; /* Mengatur gambar agar sesuai dengan ukuran kotak */
-    border-radius: 0; /* Pastikan border-radius 0 untuk menghilangkan bulat */
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 0;
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #f4f4f4; 
+    color: #2c2c2c; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #f4f4f4;
+    color: #1a1a1a; 
+    border-bottom: 2px solid #2c2c2c;
     padding-bottom: 5px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #1a1a1a; 
     color: white;
 }
