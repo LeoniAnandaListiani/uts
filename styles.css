@@ -15,8 +15,9 @@ header {
 
 .profile-photo {
     width: 150px;
-    height: 150px; 
-    border-radius: 0; 
+    height: 150px; /* Pastikan tinggi dan lebar sama agar kotak */
+    object-fit: cover; /* Mengatur gambar agar sesuai dengan ukuran kotak */
+    border-radius: 0; /* Pastikan border-radius 0 untuk menghilangkan bulat */
 }
 
 section {
