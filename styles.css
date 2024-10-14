@@ -1,44 +1,102 @@
+/* Reset Margin dan Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body { 
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #ffd6e0; /* Warna light pink yang lebih terang untuk background */
     color: #333; /* Warna abu-abu gelap untuk teks secara default */
 }
 
+/* Header Styling */
 header {
-    text-align: center;
     padding: 20px;
     background-color: #ffb3c9; /* Warna pink lebih terang untuk header */
     color: white;
 }
 
+/* Kontainer Profil */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Responsif pada perangkat kecil */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Foto Profil */
 .profile-photo {
     width: 150px;
     height: 150px; /* Menjaga proporsi kotak */
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 0; /* Sesuaikan jika ingin sudut melengkung */
+    margin-right: 20px;
 }
 
+/* Deskripsi Profil */
+.profile-description {
+    max-width: 600px;
+}
+
+/* Kontak, Skills, Languages, Experience, Organizations, Education, Certifications */
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
     background-color: white; /* Warna putih untuk background section */
     color: #333; /* Warna abu-abu gelap untuk teks di dalam section */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
+/* Heading Styling */
 h2 {
     color: #e60073; /* Warna pink terang untuk judul */
     border-bottom: 2px solid #ffd6e0;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
+/* Link Styling */
+a {
+    color: #e60073;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #ffb3c9; /* Warna pink terang untuk footer */
     color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        position: static;
+    }
 }
