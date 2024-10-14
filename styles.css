@@ -1,33 +1,25 @@
-/* Reset Margin dan Padding */
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Styling Kontainer Utama */
 .cv-container {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    background-color: #3b2a28; /* Warna cokelat tua */
-    color: #ffffff; /* Warna teks putih untuk kontras */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling Header */
 .cv-header {
     display: flex;
     align-items: center;
-    background-color: #2b1d1a; /* Warna cokelat lebih gelap */
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
 }
 
-/* Foto Profil */
 .profile-photo img {
     width: 150px;
     height: 150px;
@@ -35,72 +27,45 @@
     margin-right: 20px;
 }
 
-/* Informasi Profil */
 .profile-info {
-    max-width: 600px;
+    flex: 1;
 }
 
 .profile-info h1 {
+    margin: 0;
     font-size: 24px;
-    margin-bottom: 5px;
-    color: #f5e9e7; /* Warna putih tulang */
+    color: #007bff;
 }
 
-.profile-info p.summary {
+.profile-info .summary {
+    font-size: 14px;
     margin: 10px 0;
-    line-height: 1.4;
-    color: #d9cbc8; /* Warna cokelat terang */
 }
 
-/* Informasi Kontak */
 .contact-info {
-    list-style: none;
-    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
 }
 
 .contact-info li {
-    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-.contact-info a {
-    color: #f5e9e7; /* Warna putih tulang */
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* Styling Bagian Lainnya */
 section {
     margin: 20px 0;
-    padding: 15px;
-    background-color: #4b2e2b; /* Warna cokelat tua */
-    border-radius: 8px;
-    color: #ffffff; /* Warna teks putih */
 }
 
-h2 {
-    color: #f5e9e7; /* Warna putih tulang */
+section h2 {
+    font-size: 20px;
+    color: #007bff;
     margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 5px;
-    color: #d9cbc8; /* Warna cokelat terang */
-}
-
-/* Footer Styling */
-.cv-footer {
+footer.cv-footer {
     text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
     margin-top: 20px;
-    padding: 10px;
-    background-color: #2b1d1a; /* Warna cokelat lebih gelap */
-    color: #f5e9e7; /* Warna putih tulang */
-    border-radius: 8px;
 }
