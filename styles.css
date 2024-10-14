@@ -9,25 +9,19 @@
 body { 
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffd6e0; /* Warna light pink yang lebih terang untuk background */
-    color: #333; /* Warna abu-abu gelap untuk teks secara default */
+    background-color: #4b2e2b; /* Cokelat tua untuk latar belakang */
+    color: #fff; /* Putih untuk teks */
+    padding-bottom: 60px; /* Menambahkan padding agar footer tidak menutupi konten */
 }
 
 /* Header Styling */
 header {
-    padding: 20px;
-    background-color: #ffb3c9; /* Warna pink lebih terang untuk header */
-    color: white;
-}
-
-/* Kontainer Profil */
-.profile-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    background-color: #3e2723; /* Cokelat lebih tua untuk header */
+    color: white;
     flex-wrap: wrap; /* Responsif pada perangkat kecil */
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /* Foto Profil */
@@ -40,8 +34,16 @@ header {
 }
 
 /* Deskripsi Profil */
-.profile-description {
+.profile-text {
     max-width: 600px;
+}
+
+.profile-text h1 {
+    margin-bottom: 10px;
+}
+
+.profile-text p {
+    line-height: 1.4;
 }
 
 /* Kontak, Skills, Languages, Experience, Organizations, Education, Certifications */
@@ -57,15 +59,15 @@ section {
 
 /* Heading Styling */
 h2 {
-    color: #e60073; /* Warna pink terang untuk judul */
-    border-bottom: 2px solid #ffd6e0;
+    color: #6d4c41; /* Warna cokelat untuk judul */
+    border-bottom: 2px solid #4b2e2b;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 /* Link Styling */
 a {
-    color: #e60073;
+    color: #8d6e63; /* Warna cokelat terang untuk tautan */
     text-decoration: none;
 }
 
@@ -77,7 +79,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #ffb3c9; /* Warna pink terang untuk footer */
+    background-color: #3e2723; /* Cokelat lebih tua untuk footer */
     color: white;
     position: fixed;
     width: 100%;
@@ -86,7 +88,7 @@ footer {
 
 /* Responsivitas */
 @media (max-width: 768px) {
-    .profile-container {
+    header {
         flex-direction: column;
         text-align: center;
     }
@@ -94,6 +96,10 @@ footer {
     .profile-photo {
         margin-right: 0;
         margin-bottom: 15px;
+    }
+
+    .profile-text {
+        max-width: 100%;
     }
 
     footer {
