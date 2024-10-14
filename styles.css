@@ -5,25 +5,40 @@
     box-sizing: border-box;
 }
 
-/* Styling Kontainer Utama */
-.cv-container {
+/* Font Utama */
+body {
     font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Styling Header */
-.cv-header {
+/* Kontainer CV */
+.cv-container {
     display: flex;
-    align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
     background-color: #4b2e2b;
     color: white;
+    width: 30%;
     padding: 20px;
-    border-radius: 8px;
+    text-align: center;
+}
+
+.sidebar h1, .sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin: 20px 0;
 }
 
 /* Foto Profil */
@@ -31,71 +46,51 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-/* Informasi Profil */
-.profile-info {
-    max-width: 600px;
-}
-
-.profile-info h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
-
-.profile-info p.summary {
-    margin: 10px 0;
-    line-height: 1.4;
-}
-
-/* Informasi Kontak */
-.contact-info {
+/* Kontak dan Keahlian */
+.contact-info, .skills {
     list-style: none;
-    margin-top: 10px;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
 }
 
-.contact-info li {
-    margin-bottom: 5px;
+.contact-info li, .skills li {
+    margin-bottom: 10px;
 }
 
-.contact-info a {
-    color: #fff;
+.contact-info a, .skills a {
+    color: white;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info a:hover, .skills a:hover {
     text-decoration: underline;
 }
 
-/* Styling Bagian Lainnya */
-section {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
+/* Konten Utama */
+.main-content {
+    background-color: white;
+    width: 70%;
+    padding: 20px;
 }
 
-h2 {
+.main-content h3 {
     color: #4b2e2b;
     margin-bottom: 10px;
 }
 
-ul {
+.main-content section {
+    margin-bottom: 20px;
+}
+
+.main-content ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
-li {
+.main-content ul li {
     margin-bottom: 5px;
-}
-
-/* Footer Styling */
-.cv-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #4b2e2b;
-    color: white;
-    border-radius: 8px;
 }
