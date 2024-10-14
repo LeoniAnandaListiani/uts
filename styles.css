@@ -1,108 +1,92 @@
-/* Reset Margin dan Padding */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
-body { 
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #4b2e2b; /* Cokelat tua untuk latar belakang */
-    color: #fff; /* Putih untuk teks */
-    padding-bottom: 60px; /* Menambahkan padding agar footer tidak menutupi konten */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Header Styling */
-header {
+.cv-header {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background-color: #3e2723; /* Cokelat lebih tua untuk header */
+    background-color: #4b2e2b;
     color: white;
-    flex-wrap: wrap; /* Responsif pada perangkat kecil */
+    padding: 20px;
+    border-radius: 8px;
 }
 
-/* Foto Profil */
-.profile-photo {
+.profile-photo img {
     width: 150px;
-    height: 150px; /* Menjaga proporsi kotak */
-    object-fit: cover;
-    border-radius: 0; /* Sesuaikan jika ingin sudut melengkung */
+    height: 150px;
+    border-radius: 50%;
     margin-right: 20px;
 }
 
-/* Deskripsi Profil */
-.profile-text {
+.profile-info {
     max-width: 600px;
 }
 
-.profile-text h1 {
-    margin-bottom: 10px;
+.profile-info h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
-.profile-text p {
+.profile-info p.summary {
+    margin: 10px 0;
     line-height: 1.4;
 }
 
-/* Kontak, Skills, Languages, Experience, Organizations, Education, Certifications */
-section {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white; /* Warna putih untuk background section */
-    color: #333; /* Warna abu-abu gelap untuk teks di dalam section */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+.contact-info {
+    list-style: none;
+    margin-top: 10px;
 }
 
-/* Heading Styling */
-h2 {
-    color: #6d4c41; /* Warna cokelat untuk judul */
-    border-bottom: 2px solid #4b2e2b;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.contact-info li {
+    margin-bottom: 5px;
 }
 
-/* Link Styling */
-a {
-    color: #8d6e63; /* Warna cokelat terang untuk tautan */
+.contact-info a {
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3e2723; /* Cokelat lebih tua untuk footer */
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
 }
 
-/* Responsivitas */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+h2 {
+    color: #4b2e2b;
+    margin-bottom: 10px;
+}
 
-    .profile-photo {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
-    .profile-text {
-        max-width: 100%;
-    }
+li {
+    margin-bottom: 5px;
+}
 
-    footer {
-        position: static;
-    }
+.cv-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4b2e2b;
+    color: white;
+    border-radius: 8px;
 }
